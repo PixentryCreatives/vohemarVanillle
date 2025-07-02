@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bourbon Vanille Madagaskar - Premium Qualität</title>
+    <meta name="description"
+        content="Entdecken Sie die Exzellenz der Bourbon Vanille aus Madagaskar. Gourmet-Qualität, 100% natürlich, zertifizierte Herkunft. Bestellen Sie Ihre Premium Vanille.">
+    <meta name="keywords" content="Vanille, Madagaskar, Bourbon, Gourmet, natürlich, Premium, Export">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-bg">
+            <img src="src/image/accueil.jpeg" alt="Vanilleplantage Madagaskar" class="header-image">
+            <div class="header-overlay"></div>
+        </div>
+
+        <div class="header-content">
+            <div class="container">
+                <h1 class="header-title">
+                    Entdecken Sie die Exzellenz der
+                    <span class="title-highlight-green">Bourbon Vanille</span>
+                    <span class="title-highlight-amber">aus Madagaskar</span>
+                </h1>
+
+                <p class="header-subtitle">
+                    Gourmet-Qualität • 100% natürlich • Zertifizierte Herkunft Madagaskar
+                </p>
+
+                <div class="header-buttons">
+                    <button class="cta-button primary" onclick="scrollToProducts()">
+                        Unsere Produkte entdecken
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="cta-button secondary" onclick="scrollToInfo()">
+                        Informationen anfordern
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Warum unsere Vanille wählen?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="benefit-title">100% natürlich & biologisch</h3>
+                    <p class="benefit-description">
+                        Ohne Pestizide oder Chemikalien angebaut, umweltfreundlich
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="benefit-title">Lange, geschmeidige, glänzende Schoten</h3>
+                    <p class="benefit-description">
+                        Mit intensiven Aromen, hoher Vanillingehalte (1,8–2,5 %) und idealer Feuchtigkeit (30–38 %), ab
+                        16 cm Länge – oft sogar länger.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3 class="benefit-title">Sorgfältige Verpackung, exportfertig</h3>
+                    <p class="benefit-description">
+                        Professionelle Verpackung für Frische und Qualität
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">Herkunft: Nordosten Madagaskars</h3>
+                    <p class="benefit-description">
+                        Ausnahme-Terroir der SAVA-Region, Wiege der Bourbon Vanille
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Unsere Premium Vanilleschoten</h2>
+            <p class="products-subtitle">Wählen Sie die Menge, die zu Ihnen passt</p>
+
+            <div class="products-grid">
+                <div class="product-card" data-product="100g" data-price="21">
+                    <div class="product-image">
+                        <img src="src/image/100.jpg" alt="Vanilleschoten 100g" loading="lazy">
+                        <div class="product-badge">Ideal für Einsteiger</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bourbon Vanille - 100g</h3>
+                        <p class="product-description">Etwa 15-20 Schoten in Premium-Qualität</p>
+                        <div class="product-price">21,00 €</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('100g', 21, 'Bourbon Vanille - 100g')">
+                            <i class="fas fa-cart-plus"></i>
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card popular" data-product="250g" data-price="52.5">
+                    <div class="product-image">
+                        <img src="src/image/250-removebg-preview.png" alt="Vanilleschoten 250g" loading="lazy">
+                        <div class="product-badge popular-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bourbon Vanille - 250g</h3>
+                        <p class="product-description">Etwa 40-50 Schoten in Premium-Qualität</p>
+                        <div class="product-price">52,50 €</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('250g', 52.5, 'Bourbon Vanille - 250g')">
+                            <i class="fas fa-cart-plus"></i>
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="500g" data-price="105">
+                    <div class="product-image">
+                        <img src="src/image/500 g.jpg" alt="Vanilleschoten 500g" loading="lazy">
+                        <div class="product-badge">Bestes Preis-Leistungs-Verhältnis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bourbon Vanille - 500g</h3>
+                        <p class="product-description">Etwa 80-100 Schoten in Premium-Qualität</p>
+                        <div class="product-price">105,00 €</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('500g', 105, 'Bourbon Vanille - 500g')">
+                            <i class="fas fa-cart-plus"></i>
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="1kg" data-price="210">
+                    <div class="product-image">
+                        <img src="src/image/1kg-removebg-preview.jpg" alt="Vanilleschoten 1kg" loading="lazy">
+                        <div class="product-badge">Für Profis</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bourbon Vanille - 1kg</h3>
+                        <p class="product-description">Etwa 160-200 Schoten in Premium-Qualität</p>
+                        <div class="product-price">210,00 €</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('1kg', 210, 'Bourbon Vanille - 1kg')">
+                            <i class="fas fa-cart-plus"></i>
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart-section" style="display: none;">
+        <div class="container">
+            <div class="cart-wrapper">
+                <h2 class="section-title">Ihr Warenkorb</h2>
+
+                <div class="cart-content">
+                    <div class="cart-items" id="cart-items">
+                        <!-- Cart items will be populated by JavaScript -->
+                    </div>
+
+                    <div class="cart-summary">
+                        <div class="cart-total">
+                            <span class="total-label">Gesamtbetrag:</span>
+                            <span class="total-amount" id="cart-total">0,00 €</span>
+                        </div>
+
+                        <div class="cart-actions">
+                            <button class="continue-shopping-btn" onclick="scrollToProducts()">
+                                <i class="fas fa-arrow-left"></i>
+                                Weiter einkaufen
+                            </button>
+                            <button class="checkout-btn" onclick="scrollToOrder()">
+                                <i class="fas fa-credit-card"></i>
+                                Bestellung abschließen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-section">
+        <img src="src/image/working.jpg"
+            alt="Premium Vanilleschoten aus Madagaskar" class="section-image">
+
+        <div class="image-overlay"></div>
+
+        <div class="image-content">
+            <h3 class="image-title">Die Kunst der authentischen Vanille</h3>
+            <p class="image-subtitle">Jede Schote erzählt die Geschichte eines jahrhundertealten Know-hows</p>
+        </div>
+    </section>
+
+    <!-- Information Request Section -->
+    <section id="info" class="info-section">
+        <div class="container">
+            <div class="info-wrapper">
+                <h2 class="section-title">Benötigen Sie Informationen?</h2>
+                <p class="info-subtitle">Stellen Sie uns Ihre Fragen oder fordern Sie Unterlagen an</p>
+
+                <div class="info-content">
+                    <div class="info-text">
+                        <h3 class="info-text-title">Wir sind hier, um Ihnen zu helfen</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Fragen zu unseren Produkten</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Technische Dokumentation</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Versandinformationen</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Qualitätszertifikate</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Handelspartnerschaften</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calculator"></i>
+                                <span>Persönliche Angebote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-form-container" id="info-form-container">
+                        <form id="info-form" class="info-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="infoFirstName">Vorname *</label>
+                                    <input type="text" id="infoFirstName" name="firstName" required
+                                        placeholder="Ihr Vorname">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="infoLastName">Nachname *</label>
+                                    <input type="text" id="infoLastName" name="lastName" required
+                                        placeholder="Ihr Nachname">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="infoEmail">E-Mail *</label>
+                                    <input type="email" id="infoEmail" name="email" required
+                                        placeholder="ihre@email.de">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="infoCompany">Firma</label>
+                                    <input type="text" id="infoCompany" name="company" placeholder="Name Ihrer Firma">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="infoCountry">Land</label>
+                                <input type="text" id="infoCountry" name="country" placeholder="Ihr Land">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="infoSubject">Thema Ihrer Anfrage *</label>
+                                <select id="infoSubject" name="subject" required>
+                                    <option value="">Thema auswählen</option>
+                                    <option value="Informations produits">Produktinformationen</option>
+                                    <option value="Documentation technique">Technische Dokumentation</option>
+                                    <option value="Conditions de livraison">Lieferbedingungen</option>
+                                    <option value="Certificats qualité">Qualitätszertifikate</option>
+                                    <option value="Partenariat commercial">Handelspartnerschaft</option>
+                                    <option value="Devis personnalisé">Persönliches Angebot</option>
+                                    <option value="Autre">Anderes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="infoMessage">Ihre Nachricht *</label>
+                                <textarea id="infoMessage" name="message" rows="4" required
+                                    placeholder="Beschreiben Sie Ihre Anfrage detailliert..."></textarea>
+                            </div>
+
+                            <!-- Hidden field to identify this as an info request -->
+                            <input type="hidden" name="formType" value="Information Request">
+
+                            <button type="submit" class="submit-button" id="info-submit-button">
+                                <span id="info-button-text">
+                                    Anfrage senden
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                                <span id="info-loading-text" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Wird gesendet...
+                                </span>
+                            </button>
+
+                            <p class="form-note">
+                                <i class="fas fa-info-circle"></i>
+                                Wir antworten Ihnen schnellstmöglich.
+                            </p>
+                        </form>
+                    </div>
+
+                    <div class="info-success-message" id="info-success-message" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h2 class="success-title">Anfrage versendet!</h2>
+                        <p class="success-text">Vielen Dank für Ihre Anfrage. Wir werden uns schnellstmöglich bei Ihnen
+                            melden.</p>
+                        <button class="back-button" onclick="resetInfoForm()">Neue Anfrage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <h2 class="section-title">Bestellung abschließen</h2>
+                <p class="contact-subtitle">Füllen Sie dieses Formular aus, um Ihren Kauf zu bestätigen</p>
+
+                <div class="form-container" id="form-container">
+                    <form id="contact-form" class="contact-form">
+                        <!-- Cart Summary in Form -->
+                        <div class="form-cart-summary" id="form-cart-summary" style="display: none;">
+                            <h3 class="cart-summary-title">Zusammenfassung Ihrer Bestellung</h3>
+                            <div class="cart-summary-items" id="cart-summary-items"></div>
+                            <div class="cart-summary-total">
+                                <strong>Gesamtbetrag: <span id="form-cart-total">0,00 €</span></strong>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Vorname *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="Ihr Vorname">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">Nachname *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Ihr Nachname">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Lieferadresse *</label>
+                            <textarea id="address" name="address" rows="3" required
+                                placeholder="Ihre vollständige Lieferadresse"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">Stadt *</label>
+                                <input type="text" id="city" name="city" required placeholder="Ihre Stadt">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="country">Land *</label>
+                                <input type="text" id="country" name="country" required placeholder="Ihr Land">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nachricht (optional)</label>
+                            <textarea id="message" name="message" rows="3"
+                                placeholder="Zusätzliche Informationen, Fragen..."></textarea>
+                        </div>
+
+                        <!-- Hidden fields for order data -->
+                        <input type="hidden" id="cartData" name="cartData">
+                        <input type="hidden" name="formType" value="Order">
+
+                        <button type="submit" class="submit-button" id="submit-button">
+                            <span id="button-text">
+                                Bestellung bestätigen
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span id="loading-text" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Wird gesendet...
+                            </span>
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            Nach der Bestätigung kontaktieren wir Sie, um Zahlung und Versand zu organisieren.
+                        </p>
+                    </form>
+                </div>
+
+                <div class="success-message" id="success-message" style="display: none;">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h2 class="success-title">Bestellung erhalten!</h2>
+                    <p class="success-text">Vielen Dank für Ihre Bestellung. Wir werden uns schnellstmöglich mit Ihnen
+                        in Verbindung setzen.</p>
+                    <button class="back-button" onclick="resetForm()">Neue Bestellung</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Floating Button -->
+    <div class="cart-floating-btn" id="cart-floating-btn" style="display: none;" onclick="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/4915150512722" target="_blank" rel="noopener noreferrer" class="whatsapp-button"
+        aria-label="Chatten Sie mit uns auf WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-tooltip">
+            📩 Chatten Sie mit uns auf WhatsApp
+        </div>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Bourbon Vanille Madagaskar</h3>
+                    <p class="footer-text">Die Exzellenz authentischer Vanille, direkt von den Plantagen Madagaskars.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Kontakt</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:klaus.schaaf@pebge.eu">klaus.schaaf@pebge.eu</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+4915150512722">+49 1515 0512722</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Herkunft</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Madagaskar, SAVA-Region</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bourbon Vanille Madagaskar. Alle Rechte vorbehalten.</p>
+                <p><a href="#" class="footer-link">Impressum</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
